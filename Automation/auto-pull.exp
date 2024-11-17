@@ -1,0 +1,24 @@
+#!/usr/bin/expect
+exp_internal 1
+set -Eeuo pipefail
+set timeout 5
+
+spawn git pull origin main
+
+expect {
+  "*(yes/no)? " {
+    send "yes\n"
+    exp_continue
+  }
+  "*Enter passphrase for key '/home/robery/.ssh/id_ed25519': " {
+    send "\n"
+  }
+  "*Already up to date.*" {
+    exit 0
+  }
+  "*Fast-forward*" {
+    exit 0
+  }
+}
+expect eof
+
