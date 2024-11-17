@@ -1,0 +1,108 @@
+# Visualization palettes, markers, and labels configuration
+
+[slick_names]
+19_ = ["SOFT", "MEDIUM", "HARD"]
+18  = ["HYPERSOFT", "ULTRASOFT", "SUPERSOFT", "SOFT", "MEDIUM", "HARD", "SUPERHARD"]
+
+[fresh.markers]
+True    = "o"
+False   = "X"
+Unknown = "*"
+
+[fresh.hatch]
+True    = ""
+False   = "///"
+Unknown = ""
+
+[relative]
+labels = ["SOFT", "MEDIUM", "HARD", "INTERMEDIATE", "WET", "UNKNOWN"]
+
+[relative.palette]
+SOFT         = "#da291c"
+MEDIUM       = "#ffd12e"
+HARD         = "#f0f0ec"
+INTERMEDIATE = "#43b02a"
+WET          = "#0067ad"
+UNKNOWN      = "#00ffff"
+
+[relative.markers]
+SOFT         = "o"
+MEDIUM       = "^"
+HARD         = "s"
+INTERMEDIATE = "P"
+WET          = "X"
+UNKNOWN      = "*"
+
+[absolute.labels]
+23_   = ["C0", "C1", "C2", "C3", "C4", "C5", "INTERMEDIATE", "WET", "UNKNOWN"]
+19_22 = ["C1", "C2", "C3", "C4", "C5", "INTERMEDIATE", "WET", "UNKNOWN"]
+18    = ["HYPERSOFT", "ULTRASOFT", "SUPERSOFT", "SOFT", "MEDIUM", "HARD", "SUPERHARD", "INTERMEDIATE", "WET", "UNKNOWN"]
+
+[absolute.palette.23_]
+# C1 to C5 palette is the same as 19_22 to maintain compatibility
+C0           = "#fe813f"
+C1           = "#00a2f3"
+C2           = "#f0f0ec"
+C3           = "#ffd12e"
+C4           = "#da291c"
+C5           = "#b14ca8"
+INTERMEDIATE = "#43b02a"
+WET          = "#0067ad"
+UNKNOWN      = "#00ffff"
+
+[absolute.palette.19_22]
+# same as 2018 palette in the range of ultrasoft to hard 
+C1           = "#00a2f3"
+C2           = "#f0f0ec"
+C3           = "#ffd12e"
+C4           = "#da291c"
+C5           = "#b14ca8"
+INTERMEDIATE = "#43b02a"
+WET          = "#0067ad"
+UNKNOWN      = "#00ffff"
+
+[absolute.palette.18]
+HYPERSOFT    = "#feb4c3"
+ULTRASOFT    = "#b14ca8"
+SUPERSOFT    = "#da291c"
+SOFT         = "#ffd12e"
+MEDIUM       = "#f0f0ec"
+HARD         = "#00a2f3"
+SUPERHARD    = "#fe813f"
+INTERMEDIATE = "#43b02a"
+WET          = "#0067ad"
+UNKNOWN      = "#00ffff"
+
+[absolute.markers.23_]
+# C1 to C5 markers are the same as 19_22 to maintain compatibility
+C0           = "h"
+C1           = "H"
+C2           = "p"
+C3           = "s"
+C4           = "^"
+C5           = "o"
+INTERMEDIATE = "P"
+WET          = "X"
+UNKNOWN      = "*"
+
+[absolute.markers.19_22]
+C1           = "H"
+C2           = "p"
+C3           = "s"
+C4           = "^"
+C5           = "o"
+INTERMEDIATE = "P"
+WET          = "X"
+UNKNOWN      = "*"
+
+[absolute.markers.18]
+HYPERSOFT    = "o"
+ULTRASOFT    = "^"
+SUPERSOFT    = "s"
+SOFT         = "d"
+MEDIUM       = "p"
+HARD         = "H"
+SUPERHARD    = "h"
+INTERMEDIATE = "P"
+WET          = "X"
+UNKNOWN      = "*"
